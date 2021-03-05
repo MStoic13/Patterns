@@ -18,6 +18,8 @@ FileLogger is a logger which writes my messages to a file. I can also separate m
 
 ConsoleLogger is a logger which writes my messages to the console output changing colors of the text depending on which of the 3 types the message is: info, debug or error.
 
+Warning: if you keep writing logs and never delete them, you have a memory leak and you will fill the machine's memory. So you need to clean up your logs after a certain amount of time.
+
 ## Configuration pattern
 
 You can keep settings and service configurations in configuration files which have the format of property = value grouped together by [SectionHeaders]. These files are useful because you can change the behavior of your program without needing to build. You can use feature flags and make your code execute a feature only if it is enabled in the configuration file. And so when the code is running, if you want to turn this feature off, you change the value of the property in the configuration file instead of having to make changes in the code, build and deploy.
@@ -39,3 +41,39 @@ Unit tests usually sit in their own project for organizational purposes. They no
 ## Mocks
 
 Sometimes, you have a complex class with a bunch of context and you need to test it. The cleanest way to do this is to mock the class and then test its methods in various contexts because it's easy to inject context once you have a mock.
+
+## Timers
+
+## Sockets
+
+## Testing Sockets
+
+## Web Calls with Retry Policies
+
+## Handling Ctrl+Break
+
+## ECS (entity component system) simulations
+
+## File parsing and testing
+
+## Complex class cascading comparison leveraging Equals and GetHashCode
+
+## Directory searching (recursive and iterative) and testing
+
+## Pluggable Load Distribution
+
+## Unit tests for live services which constantly run (with mocks)
+
+## Forking traffic
+
+## Anomaly detection
+
+## Network mapping
+
+## Monitoring: logs and charts
+
+## Organizing features with Timers 
+
+## Producer Consumer
+
+## Alerting
